@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Input from user
+        </title>
+        <script type="text/javascript">
+
+            function act()
+            {
+                var u = document.getElementById("text1").value;
+                var p = document.getElementById("text2").value;
+                alert("Username and password are : "+u+" , "+p);
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="text1" placeholder="Username">
+        <br><br>
+        <input type="password" id="text2" placeholder="Password">
+        <br><br>
+        <button onclick="act()">Sign in</button>
+    </body>
+</html>
