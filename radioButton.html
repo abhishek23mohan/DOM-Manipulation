@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Radio Button
+        </title>
+        <script>
+
+            function fn()
+            {
+                document.getElementById("rd1");
+                document.getElementById("rd2");
+
+                if(rd1.checked==true)
+                {
+                    alert("Type of papad : "+rd1.value)
+                }
+                else if(rd2.checked==true)
+                {
+                    alert("Type of papad : "+rd2.value)
+                }
+                else
+                {
+                    alert("I don't like papad")
+                }
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <input id="rd1" name="grp1" type="radio" value="Kaccha Papad">kaccha papad
+        <br>
+        <input id="rd2" name="grp1" type="radio" value="Pakka Papad">pakka papad
+        <br>
+        <button onclick="fn()">Click Me</button>
+    </body>
+</html>
