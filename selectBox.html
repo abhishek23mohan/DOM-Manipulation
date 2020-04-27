@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Select Box
+        </title>
+        <script>
+
+            function fn()
+            {
+            var select = document.getElementById("selection");
+            alert(select.options[select.selectedIndex].value)
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <select id="selection"> 
+            <option value="pubg">pubg</option>
+            <option value="cod">cod</option>
+            <option value="gta">gta</option>
+            <option value="farcry">farcry</option>
+            <option value="assassin's creed">assassin's creed</option>
+        </select>
+        <br><br>
+        <button onclick="fn()">Click Me</button>
+        
+    </body>
+</html>
