@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Validation
+        </title>
+
+        <script>
+
+            function sub()
+            {
+                var username = document.getElementById("uname");
+                var password = document.getElementById("pass");
+
+                if(username.value.trim()=="" || password.value.trim()=="")
+                {
+                    alert("Username or password cannot be empty");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <form onsubmit="return sub()" action="message.html">
+            <input id="uname" type="username" placeholder="username..."></input>
+            <br><br>
+            <input id="pass" type="password" placeholder="password..."></input>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
